@@ -1,0 +1,44 @@
+{
+  "name": "Vini.L",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp build",
+    "start": "node index.js",
+    "dev": "gulp watch",
+    "postinstall": "gulp build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/viniciuslucenasouza/preverIMBDapp"
+  },
+  "author": "Vinicius Lucena e Rodolfo Viola Carvalho",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/viniciuslucenasouza/"
+  },
+  "homepage": "https://github.com/viniciuslucenasouza/",
+  "dependencies": {
+    "axios": "^0.16.2",
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "^1.15.2",
+    "browser-sync": "^2.17.0",
+    "compression": "^1.6.2",
+    "concurrently": "^3.1.0",
+    "dotenv": "^2.0.0",
+    "ejs": "^2.5.1",
+    "express": "^4.14.0",
+    "express-minify": "^0.2.0",
+    "express-session": "^1.14.0",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-cssmin": "^0.1.7",
+    "gulp-minify": "0.0.14",
+    "gulp-nodemon": "^2.2.1",
+    "helmet": "^2.1.2",
+    "morgan": "^1.7.0",
+    "serve-favicon": "^2.3.0"
+  }
+}

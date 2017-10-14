@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>App</title>
+		<% include ../snippets/head %>
+		<% include ../snippets/CSS %>
+	</head>
+	<body>
+
+
+		<div class="ui middle aligned center aligned grid">
+		  <div class="column">
+		    <h2 class="ui teal image header">
+		      <div class="content">
+		        Prevent Movie Rating
+		      </div>
+		    </h2>
+		    <form class="ui large form" id="form1">
+		      <div class="ui stacked segment">
+		        <div class="field">
+		          <div class="ui left icon input">
+		            <i class="dollar icon"></i>
+		            <input type="text" name="orcamento" placeholder="Orcamento">
+		          </div>
+		        </div>
+		        <div class="field">
+		          <div class="ui left icon input">
+		            <i class="calendar icon"></i>
+		            <input type="text" name="ano" placeholder="Ano">
+		          </div>
+		        </div>
+						<button class="ui fluid large teal submit button" type="submit">Submit</button>
+		      </div>
+
+		      <div class="ui error message"></div>
+
+		    </form>
+
+
+			<div class="ui statistic" style="display: none;" id="estatic">
+	 			<div class="value">
+					<i class="star icon"></i> <span id="estatic-texto"></span>
+				</div>
+	<div class="label">
+		Rating
+	</div>
+</div>
+
+		  </div>
+		</div>
+
+
+
+
+
+		<% include ../snippets/JS %>
+		<script>
+		$('#form1').api({
+			silent: true,
+			url: '/prever',
+			serializeForm: true,
+			method: 'POST',
+			beforeSend(data) {
+	    //s  console.log(data);
+				//$('.ui.button').addClass('disabled');
+			},
+			onComplete() {
+				//$('.ui.button').removeClass('disabled');
+			},
+			onSuccess(response) {
+	      console.log(response);
+				$('#estatic')
+				.removeAttr( 'style' );
+
+			//		.removeClass('error')
+				//	.addClass('success')
+				$('#estatic-texto')
+				 .text(response)
+
+				//	.fadeIn();s;
+
+				return response;
+			},
+			onFailure(response) {
+			//	$('#message')
+			//		.removeClass('success')
+			//		.addClass('error')
+		//			.text(response.message)
+			//		.fadeIn();
+
+				return response;
+			}
+		});
+		</script>
+	</body>
+</html>
