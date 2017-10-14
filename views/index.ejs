@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+
+    <form id="myForm">
+      Orcamento:<br>
+      <input type="text" name="orcamento">
+      <br>
+      Ano:<br>
+      <input type="text" name="ano">
+      <br><br>
+      <input type="submit" value="Submit">
+    </form>
+  </body>
+
+<script>
+var formData = JSON.stringify($("#myForm").serializeArray())
+
+$.ajax({
+  type: "POST",
+  url: "/",
+  data: formData,
+  success: function(){},
+  dataType: "json",
+  contentType : "application/json"
+});
+</script>
+
+</html>
