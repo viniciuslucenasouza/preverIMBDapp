@@ -59,12 +59,12 @@ Agora seu R está ocupado e alimentando o aplicativo com dados. Mas isso não é
 
 Todo o processo será um app Local. Você pode acessar a interface gerada pelo plumber através do endereço que o próprio R retorna.
 
-Temos então: \[C:Aparecida.png\] Note que no meu caso tem a função GET, que não abordamos, e nem rodamos nesse exemplo, ela não é importante para o nosso exemplo.
+Temos então: ![](C:\Users\Maria%20Aparecida\Desktop\ViniciusRugby\AppsNode\PreverIMBDapp\preverIMBDapp\plumber.png) Note que no meu caso tem a função GET, que não abordamos, e nem rodamos nesse exemplo, ela não é importante para o nosso exemplo.
 
 Alimentando a funcao\_que\_preve()
 ----------------------------------
 
-Para teste usaremos um aplicativo para google crhome chamado POSTMAN
+Para teste usaremos um aplicativo para google chrome chamado POSTMAN
 
 ![](C:\Users\Maria%20Aparecida\Desktop\ViniciusRugby\AppsNode\PreverIMBDapp\preverIMBDapp\logo-glyph.png)
 
@@ -96,7 +96,7 @@ Criando um front-end
 
 Para o front end usaremos o Node.js e editamos com o Atom
 
-Você pode baixar na pasta [do repositorio aqui](Editar)
+Você pode baixar na pasta nodejsExemple [do repositorio aqui](https://github.com/viniciuslucenasouza/preverIMBDapp)
 
 Pelo terminal de comando vá até a pasta e execute o comando: `npm install`
 
@@ -114,6 +114,6 @@ Assim o aplicativo irá rodar com o ip local na porta 3000
  UI External: http://10.0.0.11:3001
 ```
 
-Pronto, nosso app está rodando na rede local. Voce pode acessar pelo seu celular através do IP External e na maquina através Local.
+![](C:\Users\Maria%20Aparecida\Desktop\ViniciusRugby\AppsNode\PreverIMBDapp\preverIMBDapp\app.png) Pronto, nosso app está rodando na rede local. Voce pode acessar pelo seu celular através do IP External e na maquina através Local.
 
 ![](C:\Users\Maria%20Aparecida\Desktop\ViniciusRugby\AppsNode\PreverIMBDapp\preverIMBDapp\celular.jpeg)

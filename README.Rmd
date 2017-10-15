@@ -4,7 +4,7 @@ output: github_document
 ---
 ## Inicio
 
-Esse Markdown é uma continuação do trabalho Regressao-Linear-para-prever-notas-IMbd-programa-o-em-R que tem por finalidade desenvolver um webApp usando da função de predição de notas. 
+Esse Markdown é uma continuação do trabalho Regressao-Linear-para-prever-notas-IMbd-programa-o-em-R que tem por finalidade desenvolver um WebApp usando da função de predição de notas. 
 
 Caso não tenha visto [Acesse AQUI](http://rpubs.com/viniciuslucenasouza/316278) a publicação no Rpubs
 
