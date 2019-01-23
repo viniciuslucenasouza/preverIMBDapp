@@ -1,4 +1,4 @@
-Qlik Web APP - Terra
+Web APP
 ===================
 
 #### Para desenvolver, siga as seguintes etapas: ####
